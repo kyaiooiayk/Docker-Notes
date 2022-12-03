@@ -130,8 +130,8 @@ When running a container, three flags that you should keep in mind are:
 ***
 
 ## Available tutorials
-- [Model_training_and_serialisation with Docker and Flask]()
-- [Building an Ubuntu and Python Docker Image]()
+- [Model training and serialisation with Docker and Flask](https://github.com/kyaiooiayk/Docker-Notes/tree/main/tutorials/Docker_and_Flask)
+- [Building an Ubuntu and Python Docker Image](https://github.com/kyaiooiayk/Docker-Notes/tree/main/tutorials/Building_Ubuntu_and_Python_Docker_Image)
 ***
 
 ## References
