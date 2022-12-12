@@ -2,7 +2,7 @@
 ***
 
 ## Brief intro on Docker
-- Docker is a tool designed to create, deploy, and run applications by using containers. The applications you build, if shipped with a docker image, become reproducible anywhere. 
+- Docker is a tool designed to create, deploy, and run applications by using containers. The applications you build, if shipped with a docker image, become reproducible anywhere.  Containerisation offers a consistent state across different servers or cloud environments.
 - It is open-source and essentially a container file format. It automates the deployment of applications as portable, self-sufficient containers that can run in the cloud or on-premises.
 - A container is a standardized software unit, in simple terms — nothing but a packaged bundle of application code and required libraries and other dependencies.
 - A **Docker Image** is an executable software package that includes everything needed to run an application and becomes a Container at runtime.
