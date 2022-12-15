@@ -124,9 +124,11 @@ When running a container, three flags that you should keep in mind are:
 - Remove all unused containers / images: ```docker container prune``` or ```docker system prune```
 ***
 
-## Docker image vs. container
-- Docker images are read-only templates used to build containers. 
-- Docker Containers are deployed instances created from those templates.
+## Container nomenclature
+- **Docker images** are read-only templates used to build containers. 
+- **Docker containers** are deployed instances created from those templates.
+- **Nodes** are physical or virtual machines or a physical machine running an instance of the Docker Engine. Typically you have several nodes in a cluster; in a learning or resource-limited environment, you might have only one node.
+- **Pods** is where the containers are placed to then be run on a nodes
 ***
 
 ## Available tutorials
