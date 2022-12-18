@@ -33,6 +33,11 @@
 - Conclusion? Containers can fully encapsulate not just your training code, but the entire dependency stack down to the hardware libraries.
 ***
 
+## Docker vs. VM
+- Docker containers are not VMs. Containrs do not bundle a full operating system but only libraries and settings required to make the software work. 
+- This creates an efficient, light-weight, self-contained system which guarantees that the software will always run the same, regardless where it is deployed.
+***
+
 ## Containers and state
 - As cloud computing and microservices grow in popularity, so too has containerisation of applications, whether stateful or stateless. Containers are units of code for an application that are packaged up, together with their libraries and dependencies, so that they’re able to be moved easily and can run in any environment, whether on a desktop, traditional IT infrastructure, or on a cloud. 
 - Originally, containers were built to be stateless, as this suited their portable, flexible nature. But as containers have come into more widespread use, people began containerizing (redesigning and repackaging for the purposes of running from containers) existing stateful apps. This gave them the flexibility and speed of using containers, but with the storage and context of statefulness.
