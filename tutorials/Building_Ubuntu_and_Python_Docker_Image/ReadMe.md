@@ -19,8 +19,9 @@ To this end, two scripts are needed:
 - Attaching to a Docker container is accomplished with the command `docker attach $CONTAINER_ID` (notice that a few letters of the $CONTAINER_ID are enough).
 - The `exit` command stops the Docker container. It can be removed with `docker rm $CONTAINER_ID`.- 
 - The Docker image can be removed via `docker rmi` if not needed any longer as this my take a considerable amount of space.
+***
 
-
-## Refeneces
+## References
 - [Source Code](https://github.com/yhilpisch/py4fi2nd/tree/master/code/ch02/Docker)
 - Hilpisch, Yves. Python for finance: mastering data-driven finance. O'Reilly Media, 2018.
+***
