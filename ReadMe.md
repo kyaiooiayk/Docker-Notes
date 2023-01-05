@@ -146,6 +146,7 @@ When running a container, three flags that you should keep in mind are:
 ***
 
 ## Container nomenclature
+- **Docker registries** is where the images are published. The default Docker registry, called DockerHub, is supported by Docker, Inc. An account on DockerHub is free and lets you push public images to it.
 - **Docker images** are read-only templates used to build containers. 
 - **Docker containers** are deployed instances created from those templates.
 - **Nodes** are physical or virtual machines or a physical machine running an instance of the Docker Engine. Typically you have several nodes in a cluster; in a learning or resource-limited environment, you might have only one node.
@@ -164,4 +165,5 @@ When running a container, three flags that you should keep in mind are:
 - [Stateful and stateless](https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless)
 - [Docker cheatsheet](https://dockerlabs.collabnix.com/docker/cheatsheet/)
 - [Introduction to Microservices, Docker, and Kubernetes](https://www.youtube.com/watch?v=1xo-0gCVhTU)
+- Hapke, Hannes, and Catherine Nelson. Building machine learning pipelines. O'Reilly Media, 2020.
 ***
