@@ -1,5 +1,5 @@
 # Building an Ubuntu and Python Docker Image
-*This section illustrates the building of a Docker image based on the latest version of Ubuntu. *
+*This section illustrates the building of a Docker image based on the latest version of Ubuntu.*
 ***
 
 ## Description of the files needed
