@@ -38,6 +38,17 @@
 - This creates an efficient, light-weight, self-contained system which guarantees that the software will always run the same, regardless where it is deployed.
 ***
 
+## Docker image and container
+- **Docker image** is a kind of ready-to-use software read-only template crafted with source codes, libraries, external dependencies, tools, and other miscellaneous files that are needed for any software application to run successfully on any platform or OS. Often referred to as snapshots, representing the app and its virtual environment at a specific point in time. A docker image can’t be executed by themselves and cannot run or start.
+- **Docker container** is nothing but a box that has the ability to run the docker image templates. The moment you create a container using those immutable images you essentially end up creating a read-write copy of that filesystem (docker image) inside the given container. A container can also be considered as a cohesive software unit that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. 
+- Being more specific:
+  - The key difference between a Docker image Vs a container is that a Docker image is a read-only immutable template that defines how a container will be realized. A Docker container is a runtime instance of a Docker image that gets created when the `$docker run` command is implemented.  
+  - Before the docker container can even exist docker templates/images are built using `$ docker build` CLI. 
+  - Docker image templates can exist in isolation but containers can't exist without images.  
+  - So docker image is an integral part of containers that differs only because of their objectives which we have already covered.  
+  - Docker images can’t be paused or started but a Docker container is a run time instance that can be started or paused.
+***
+
 ## Containers and state
 - As cloud computing and microservices grow in popularity, so too has containerisation of applications, whether stateful or stateless. Containers are units of code for an application that are packaged up, together with their libraries and dependencies, so that they’re able to be moved easily and can run in any environment, whether on a desktop, traditional IT infrastructure, or on a cloud. 
 - Originally, containers were built to be stateless, as this suited their portable, flexible nature. But as containers have come into more widespread use, people began containerizing (redesigning and repackaging for the purposes of running from containers) existing stateful apps. This gave them the flexibility and speed of using containers, but with the storage and context of statefulness.
@@ -72,7 +83,6 @@ $ sudo usermod -aG docker $USER
 
 ## Docker storage layers
 - A useful concept behind Docker images is storage layers. Building an image means installing almost a whole dedicated Linux OS for your package. To avoid running this operation every time, Docker uses a layered filesystem. Here is how it works: if the first layer contains Files A and B, and the second layer adds File C, the resulting filesystems show A, B, and C. If we want to create a second image that uses Files A, B, and D, we only need to change the second layer to add File D. This means that we can have base images that have all the basic packages, and then we can focus on changes specific to your image, 
-
 ***
 
 ## Step-by-step guide to create your own Docker image
@@ -146,7 +156,6 @@ CMD streamlit run app.py
 - ```docker container prune``` or ```docker system prune```: Remove all unused containers / images
 - `docker logs`: Displays the STDOUT and STDERR information produced by a container, which is very useful for debugging.
 - `docker exe container_id bash`: allows you to enter inot a container environment with bash and examine it from inside.
-
 ***
 
 ## Container nomenclature
@@ -170,4 +179,5 @@ CMD streamlit run app.py
 - [Docker cheatsheet](https://dockerlabs.collabnix.com/docker/cheatsheet/)
 - [Introduction to Microservices, Docker, and Kubernetes](https://www.youtube.com/watch?v=1xo-0gCVhTU)
 - Hapke, Hannes, and Catherine Nelson. Building machine learning pipelines. O'Reilly Media, 2020.
+- [Docker Image vs Container: The Key Differences](https://www.knowledgehut.com/blog/devops/docker-vs-container)
 ***
