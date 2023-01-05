@@ -110,11 +110,11 @@ CMD streamlit run app.py
   - `--no-cache-dir` is used if you don't have space on your hard drive or you previously run pip install with unexpected settings which you do not want to include anymore and finall if you want to keep a Docker image as small as possible. What is cache directory used for? It used to store the installation files(.whl, etc) of the modules that you install through pip and to store the source files (.tar.gz, etc) to avoid re-download when not expired 
 ***
 
-## Docker flags
-When running a container, three flags that you should keep in mind are:
-  - `--rm` will remove the container as soon as it is stopped;
-  - `-d` will run the container in the background (docker run exits immediately);
-  - `-it` will run the container in an interactive mode (you can use a terminal inside the container).
+## Docker CLI flags
+- `--rm`: will remove the container as soon as it is stopped;
+- `-d`: will run the container in the background (docker run exits immediately);
+- `-it`: will run the container in an interactive mode (you can use a terminal inside the container).
+- `v`: mounts a Docker volume or host directory into the container—for example, a directory containing datasets.
 ***
 
 ## Dockerfile
@@ -129,20 +129,24 @@ When running a container, three flags that you should keep in mind are:
 ***
 
 ## List of commands
-- List all images in your system: `docker images`
-- Create a container: `docker run CONTAINER --network NETWORK`
-- Start a stopped container: `docker start CONTAINER NAME`
-- Stop a running container: `docker stop`
-- List all running containers: `docker ps`
-- List all containers including stopped ones: do`cker ps -a`
-- Inspect the container configuration. For instance network settings and so on: `docker inspect CONTAINER`
-- List all available virtual networks: `docker network ls`
-- Create a new network: `docker network create NETWORK --driver bridge`
-- Connect a running container to a network: `docker network connect NETWORK CONTAINER`
-- Disconnect a running container from a network: `docker network disconnect NETWORK CONTAINER`
-- Remove a network: `docker network rm NETWOR`
-- Remove a container, or remove an image: `docker rm <id>` or `docker rmi <id> (or name)`
-- Remove all unused containers / images: ```docker container prune``` or ```docker system prune```
+- `docker images`: list all images in your system
+- `docker run CONTAINER --network NETWORK`: create a container
+- `docker start CONTAINER NAME`: start a stopped container
+- `docker stop`: stop a running container: 
+- `docker ps`: list all running containers
+- `docker ps -a`: list all containers including stopped ones
+- `docker inspect CONTAINER ID`: inspect the container configuration. For instance network settings and so on: 
+- `docker network ls`: list all available virtual networks
+- `docker network create NETWORK --driver bridge`: create a new network
+- `docker network connect NETWORK CONTAINER`: connect a running container to a network
+- `docker network disconnect NETWORK CONTAINER`: disconnect a running container from a network
+- `docker network rm NETWORK`: Remove a network: 
+- `docker rm <id>`: remove a container
+- `docker rmi <id> (or name)`: remove an image
+- ```docker container prune``` or ```docker system prune```: Remove all unused containers / images
+- `docker logs`: Displays the STDOUT and STDERR information produced by a container, which is very useful for debugging.
+- `docker exe container_id bash`: allows you to enter inot a container environment with bash and examine it from inside.
+
 ***
 
 ## Container nomenclature
