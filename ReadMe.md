@@ -70,6 +70,11 @@ $ sudo usermod -aG docker $USER
 - Validate the installation of Docker on your workstation with the following command: `docker --version`
 ***
 
+## Docker storage layers
+- A useful concept behind Docker images is storage layers. Building an image means installing almost a whole dedicated Linux OS for your package. To avoid running this operation every time, Docker uses a layered filesystem. Here is how it works: if the first layer contains Files A and B, and the second layer adds File C, the resulting filesystems show A, B, and C. If we want to create a second image that uses Files A, B, and D, we only need to change the second layer to add File D. This means that we can have base images that have all the basic packages, and then we can focus on changes specific to your image, 
+
+***
+
 ## Step-by-step guide to create your own Docker image
 - Step #1: Save all the packages in the file with: `pip freeze > requirements.txt`. It’s a good practice to list the exact version of the library rather than `><`, but this does not seem to have stuck among practioners. The file looks like something like this:
 ```
@@ -110,6 +115,17 @@ When running a container, three flags that you should keep in mind are:
   - `--rm` will remove the container as soon as it is stopped;
   - `-d` will run the container in the background (docker run exits immediately);
   - `-it` will run the container in an interactive mode (you can use a terminal inside the container).
+***
+
+## Dockerfile
+- `FROM`: Defines the base container to build from. There are many base containers available to download, such as `ubuntu`, `python3.6`. It tells Docker to pull this image from a registry, in our case DockerHub, and use it as the base image.
+- `RUN`: Runs bash command. This is where we want to do package installations, directory creation, etc. Because each line will create a layer in the image, it’s good to have shared and general package installations in the first lines in Dockerfile. This means that during rebuilds, Docker will try to use layers from the cache.
+- `ARG`: It’s useful if you want to have multiple flavors of the same image, for example dev and production.
+- `COPY`: Copies files from a context. The context is a set of local files that are exposed to Docker during the build, and it only uses them in the process of building the image. This can be used to copy your source code or data to a container.
+- `ENV`: Sets an environment variable. This variable will be part of the image and will be visible in build and run.
+- `CMD`: This is the default command for a container. A good practice in Docker is to run one command per container.
+- `WORKDIC`: The default directory in the image. This will be the directory the default command will be run from.
+- `EXPOSE`: Specifies ports the container will use.
 ***
 
 ## List of commands
