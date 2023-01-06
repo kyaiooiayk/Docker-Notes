@@ -1,5 +1,5 @@
 # How to use Docker
-In this tutorial we will:
+- In this tutorial we will:
     - Train a model
     - Serialise the model
     - Create an app with Flask
