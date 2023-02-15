@@ -138,6 +138,12 @@ $ sudo usermod -aG docker $USER
 - **Pods** is where the containers are placed to then be run on a nodes
 ***
 
+## Docker compose
+- Docker Compose is a tool that was developed to help define and share multi-container applications. With Compose, we can create a YAML file to define the services and with a single command, can spin everything up or tear it all down.
+- The key difference between docker run versus docker-compose is that docker run is entirely command line based, while docker-compose reads configuration data from a YAML file. The second major difference is that docker run can only start one container at a time, while docker-compose will configure and run multiple.
+- As cloud-native environments increase in complexity, docker run commands will become unmanageable long. When a docker run command becomes more than seventy or eighty characters in length, it makes more sense to configure the container in a `docker-compose.yaml` file.
+***
+
 ## Available tutorials
 - [Model training and serialisation with Docker and Flask](https://github.com/kyaiooiayk/Docker-Notes/tree/main/tutorials/Docker_and_Flask)
 - [Building an Ubuntu and Python Docker Image](https://github.com/kyaiooiayk/Docker-Notes/tree/main/tutorials/Building_Ubuntu_and_Python_Docker_Image)
