@@ -152,6 +152,12 @@ $ sudo usermod -aG docker $USER
 - As cloud-native environments increase in complexity, docker run commands will become unmanageable long. When a docker run command becomes more than seventy or eighty characters in length, it makes more sense to configure the container in a `docker-compose.yaml` file.
 ***
 
+## Docker sharing
+- Sharing can be done in 2 ways:
+  - Commit the Dockerfile which can be used to build the image and container
+  - Push the docker image to a central repository like Docker Hub and pull it from there. You need to create an account in docker hub in-order to be able to push the image. 
+***
+
 ## Available tutorials
 - [Model training and serialisation with Docker and Flask](https://github.com/kyaiooiayk/Docker-Notes/tree/main/tutorials/Docker_and_Flask)
 - [Building an Ubuntu and Python Docker Image](https://github.com/kyaiooiayk/Docker-Notes/tree/main/tutorials/Building_Ubuntu_and_Python_Docker_Image)
