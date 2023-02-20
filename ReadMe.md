@@ -47,6 +47,8 @@
   - Docker image templates can exist in isolation but containers can't exist without images.  
   - So docker image is an integral part of containers that differs only because of their objectives which we have already covered.  
   - Docker images can’t be paused or started but a Docker container is a run time instance that can be started or paused.
+
+![image](https://user-images.githubusercontent.com/89139139/220131562-d523bc2b-0941-425c-9dd0-4ab02e89904c.png)
 ***
 
 ## Containers and state
