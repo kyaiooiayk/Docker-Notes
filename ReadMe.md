@@ -161,4 +161,5 @@ $ sudo usermod -aG docker $USER
 - Hapke, Hannes, and Catherine Nelson. Building machine learning pipelines. O'Reilly Media, 2020.
 - [Docker Image vs Container: The Key Differences](https://www.knowledgehut.com/blog/devops/docker-vs-container)
 - [Docker run vs docker-compose: What's the difference?](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Docker-run-vs-docker-compose-Whats-the-difference)
+- [MLOps Basics [Week 5]: Model Packaging - Docker](https://www.ravirajag.dev/blog/mlops-docker)
 ***
