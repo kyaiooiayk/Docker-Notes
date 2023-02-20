@@ -51,6 +51,12 @@
 ![image](https://user-images.githubusercontent.com/89139139/220131562-d523bc2b-0941-425c-9dd0-4ab02e89904c.png)
 ***
 
+## Docker file vs. Docker image vs. Docker instance
+- A **Docker File** contains the list of commands to run which are necessary for the application to run (like dependencies, codes, command to run etc.)
+- A Docker Image** is a lightweight, standalone, executable package of software (built using dockerfile) that includes everything needed to run an application: code, runtime, system tools, system libraries, and settings.
+- A **Docker Container** is an instance of Docker Image which contains the running application.
+***
+
 ## Containers and state
 - As cloud computing and microservices grow in popularity, so too has containerisation of applications, whether stateful or stateless. Containers are units of code for an application that are packaged up, together with their libraries and dependencies, so that they’re able to be moved easily and can run in any environment, whether on a desktop, traditional IT infrastructure, or on a cloud. 
 - Originally, containers were built to be stateless, as this suited their portable, flexible nature. But as containers have come into more widespread use, people began containerizing (redesigning and repackaging for the purposes of running from containers) existing stateful apps. This gave them the flexibility and speed of using containers, but with the storage and context of statefulness.
