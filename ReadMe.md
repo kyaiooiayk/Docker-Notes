@@ -114,7 +114,7 @@ $ sudo usermod -aG docker $USER
 - `COPY`: Copies files from a context. The context is a set of local files that are exposed to Docker during the build, and it only uses them in the process of building the image. This can be used to copy your source code or data to a container.
 - `ENV`: Sets an environment variable. This variable will be part of the image and will be visible in build and run.
 - `CMD`: This is the default command for a container. A good practice in Docker is to run one command per container.
-- `WORKDIC`: The default directory in the image. This will be the directory the default command will be run from.
+- `WORKDIR`: The default directory in the image. This will be the directory the default command will be run from.
 - `EXPOSE`: Specifies ports the container will use.
 ***
 
