@@ -161,6 +161,7 @@ $ sudo usermod -aG docker $USER
 ## Available tutorials
 - [Model training and serialisation with Docker and Flask](https://github.com/kyaiooiayk/Docker-Notes/tree/main/tutorials/Docker_and_Flask)
 - [Building an Ubuntu and Python Docker Image](https://github.com/kyaiooiayk/Docker-Notes/tree/main/tutorials/Building_Ubuntu_and_Python_Docker_Image)
+- [How to build a simple Ubuntu Docker image](https://github.com/kyaiooiayk/Docker-Notes/blob/main/tutorials/Simple_ubuntu_docker.md)
 ***
 
 ## References
