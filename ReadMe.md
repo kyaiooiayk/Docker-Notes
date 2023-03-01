@@ -118,6 +118,10 @@ $ sudo usermod -aG docker $USER
 - `EXPOSE`: Specifies ports the container will use.
 ***
 
+## Docker `ARG`, `ENV` and `.env`
+- [A complete guide](https://vsupalov.com/docker-arg-env-variable-guide/)
+***
+
 ## List of commands
 - `docker images`: list all images in your system
 - `docker run CONTAINER --network NETWORK`: create a container
