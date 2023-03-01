@@ -110,7 +110,7 @@ $ sudo usermod -aG docker $USER
 ## Dockerfile
 - `FROM`: Defines the base container to build from. There are many base containers available to download, such as `ubuntu`, `python3.6`. It tells Docker to pull this image from a registry, in our case DockerHub, and use it as the base image.
 - `RUN`: Runs bash command. This is where we want to do package installations, directory creation, etc. Because each line will create a layer in the image, it’s good to have shared and general package installations in the first lines in Dockerfile. This means that during rebuilds, Docker will try to use layers from the cache.
-- `ARG`: It’s useful if you want to have multiple flavors of the same image, for example dev and production.
+- `ARG`: The `ARG` directive in Dockerfile defines the parameter name and defines its default value. You can use `ARG` values to set `ENV` values.
 - `COPY`: Copies files from a context. The context is a set of local files that are exposed to Docker during the build, and it only uses them in the process of building the image. This can be used to copy your source code or data to a container.
 - `ENV`: Sets an environment variable. This variable will be part of the image and will be visible in build and run.
 - `CMD`: This is the default command for a container. A good practice in Docker is to run one command per container.
