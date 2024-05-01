@@ -36,6 +36,8 @@
 ## Docker vs. VM
 - Docker containers are not VMs. Containrs do not bundle a full operating system but only libraries and settings required to make the software work. 
 - This creates an efficient, light-weight, self-contained system which guarantees that the software will always run the same, regardless where it is deployed.
+- **Containerization vs. virtualisation** Containerisation is considered to be a lightweight version of
+virtualization, which virtualizes the operating system instead of hardware. Without the hypervisor, the containers enjoy faster resource provisioning. All the resources (including code, dependencies) that are needed to run the application or microservice are packaged together, so that the applications can run anywhere
 ***
 
 ## Docker image and container
