@@ -55,7 +55,7 @@ virtualization, which virtualizes the operating system instead of hardware. With
 
 ## Docker file vs. Docker image vs. Docker instance
 - A **Docker File** contains the list of commands to run which are necessary for the application to run (like dependencies, codes, command to run etc.)
-- A Docker Image** is a lightweight, standalone, executable package of software (built using dockerfile) that includes everything needed to run an application: code, runtime, system tools, system libraries, and settings.
+- A **Docker Image** is a lightweight, standalone, executable package of software (built using dockerfile) that includes everything needed to run an application: code, runtime, system tools, system libraries, and settings.
 - A **Docker Container** is an instance of Docker Image which contains the running application.
 ***
 
